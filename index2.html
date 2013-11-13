@@ -250,35 +250,24 @@
 			<p><a target="_blank" href="http://www.co.monroe.in.us/tsd/Community/ParksRecreation.aspx">Monroe County Parks and Recreation</a>
 			</p>
 		</footer>
-<!--		<script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script> 
-		<script>
-			var main = document.getElementById('main');
+<!--		<script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script> -->
+<script type="text/javascript">
+function test()
+{
+    alert(window.document.pic.src);
+     //alert msg print like http://localhost/test/pic1.png
+    if (document.pic.src=="images/photos/wheelchair_race_2013-774x516.png"){
 
-			main.addEventListener('mouseover', function() {
-				console.log('I like chocolate');
-				cacao();
-				cornify_add();	
-			});
-
-			function cacao() {
-				document.body.style.backgroundImage = 'url(hershey.jpg)';
-			}
-
-			</script> -->
-		<script>
-			function swap()
-							{
-   				if (document.getElementById("caro1").src.endsWith('images/photos/wheelchair_race_2013-774x516.png') != -1)  //==:Comparison
-   							{ 
-      			document.getElementById("caro2").src = "images/photos/athletics_champions_2012.jpg"; //=:assignment   
-   							} 
-   				else if (window.document.pic.src.endsWith('images/photos/athletics_champions_2012.jpg') != -1) 
-   							{ 
-      			document.getElementById("caro1").src = "images/photos/wheelchair_race_2013-774x516.png"; 
-  							}
+document.pic.src="images/photos/athletics_champions_2012.jpg";
 } 
+else if (document.pic.src=="images/photos/athletics_champions_2012.jpg"){
 
-		</script>
+document.pic.src="images/photos/wheelchair_race_2013-774x516.png";
+}
+}
+</script>
+
+<img src="images/photos/wheelchair_race_2013-774x516.png" name="pic" onclick="test()"/>
 
 	</body>
 </html>
